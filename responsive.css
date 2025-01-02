@@ -1,0 +1,480 @@
+:root {
+  --bg-color: #080808;
+  --second-bg-color: #131313;
+  --text-color: #fff;
+  --main-color: #00ffee;
+}
+
+/* For screens with a max width of 1200px */
+@media (max-width: 1200px) {
+  .home {
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
+  .home-content h3 {
+    font-size: 3rem;
+  }
+
+  .home-img img {
+    max-width: 60vw;
+  }
+
+  .navbar a {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 0.8rem 2.4rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* For screens with a max width of 768px */
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 10%;
+  }
+
+  .logo-pic img {
+    margin-top: 10px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+    left: 580px;
+    top: 38px;
+  }
+
+  .home-content {
+    transform: translateY(80%);
+  }
+
+  .home-content h1 {
+    font-size: 6rem;
+  }
+
+  .home-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .home-content p {
+    font-size: 1.4rem;
+    padding-right: 30px;
+  }
+
+  .home-img img {
+    position: absolute;
+    left: 50%;
+    top: 28%;
+    transform: translateX(-60%);
+    max-width: 33vw;
+    box-shadow: 0 0 20px var(--main-color);
+  }
+
+  .home-img img:hover {
+    box-shadow: 0 0 25px var(--main-color), 0 0 30px var(--main-color);
+    transform: translateX(-60%);
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .btn-group a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* For screens with a max width of 480px */
+@media (max-width: 480px) {
+  .header {
+    padding: 2rem 4%;
+  }
+
+  .home-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 3rem;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1.4rem;
+  }
+
+  .home-img img {
+    max-width: 80vw;
+  }
+
+  .btn {
+    padding: 0.6rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .social-icons a {
+    margin: 2rem 1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .heading {
+    font-size: 5rem;
+    margin: 3rem auto;
+    padding: 3px 20px;
+  }
+}
+
+/* For screens with a max width of 1200px */
+@media (max-width: 1200px) {
+  .timeline-items {
+    max-width: 900px;
+  }
+
+  .timeline-content {
+    width: 100px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For screens with a max width of 768px */
+@media (max-width: 768px) {
+  .timeline-items::before {
+    left: 19px;
+  }
+
+  .timeline-item:nth-child(odd) {
+    padding-right: 30px;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(even) {
+    padding-left: 30px;
+  }
+
+  .timeline-dot {
+    left: 10px;
+  }
+
+  .fourth-dot {
+    left: 1px;
+  }
+
+  .timeline-item .time-date {
+    margin-left: 40px;
+    margin-top: 2px;
+  }
+
+  .timeline-item .second-date {
+    margin-left: 10px;
+  }
+
+  .timeline-content {
+    width: 560px;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .timeline-item .second-content {
+    margin-left: 29px;
+  }
+
+  .timeline-content:hover {
+    transform: translateX(-17px) scale(1.2);
+    box-shadow: 0 0 50px var(--main-color);
+  }
+
+  .services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-box {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .front-end-box,
+  .canva-box,
+  .digital-marketing-box,
+  .ui-box {
+    height: auto;
+  }
+
+  .service-info h4 {
+    font-size: 2.5rem;
+  }
+
+  .service-info p {
+    font-size: 1.6rem;
+    margin: 0px;
+  }
+
+  .heading {
+    font-size: 7rem;
+  }
+}
+
+/* For screens with a max width of 480px */
+@media (max-width: 480px) {
+  .timeline-items {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .timeline-content {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service-box {
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .service-info h4 {
+    font-size: 2rem;
+  }
+
+  .service-info p {
+    font-size: 1.2rem;
+  }
+}
+
+/* For screens with a max width of 768px */
+@media (max-width: 768px) {
+  .skill-category {
+    width: 100%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-item {
+    height: auto;
+  }
+
+  .grid-item img {
+    height: auto;
+  }
+}
+
+/* For screens with a max width of 480px */
+@media (max-width: 480px) {
+  .skills-container {
+    flex-direction: column;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    height: auto;
+  }
+
+  .grid-item img {
+    height: auto;
+  }
+
+  .grid-item h3 {
+    font-size: 1.8rem;
+  }
+
+  .grid-item p {
+    font-size: 1rem;
+  }
+}
+
+/*************************** Reviews Section Create *********************************/
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid to 2 columns */
+  }
+
+  .review-item {
+    width: 90%; /* Adjust item width for smaller screens */
+    margin: 1rem auto; /* Center the review items */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr; /* Single column layout for smaller devices */
+  }
+
+  .review-item {
+    width: 100%; /* Full width on small screens */
+    margin: 2rem auto; /* Increased margin for better spacing */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .review-item h2 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .review-item p {
+    font-size: 1.1rem; /* Adjust paragraph font size */
+  }
+
+  .reviews-box img {
+    width: 12rem; /* Smaller profile images */
+  }
+}
+
+/*************************** Contact Section Create *********************************/
+@media screen and (max-width: 1024px) {
+  .contact form {
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 2rem; /* Reduce gap between form elements */
+  }
+
+  .contact form .input-box input,
+  .contact form textarea {
+    padding: 2rem; /* Adjust padding for smaller screens */
+    font-size: 1.6rem; /* Adjust font size */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact h2 {
+    font-size: 2.4rem; /* Smaller font size for heading */
+  }
+
+  .contact form .input-box input,
+  .contact form textarea {
+    padding: 1.8rem; /* Further reduce padding */
+    font-size: 1.4rem; /* Adjust font size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact form {
+    margin: 2rem auto; /* Reduce form margin */
+  }
+
+  .contact form .input-box input,
+  .contact form textarea {
+    width: 100%; /* Full width on small screens */
+    padding: 1.5rem; /* Adjust padding */
+    font-size: 1.2rem; /* Smaller font size */
+  }
+
+  .contact h2 {
+    font-size: 2rem; /* Adjust heading size */
+  }
+}
+
+/*************************** Footer Create *********************************/
+
+@media screen and (max-width: 1024px) {
+  .footer .about-box {
+    width: 90%; /* Adjust width of the about box */
+    padding: 15px 30px; /* Adjust padding */
+  }
+
+  .footer-logo-pic img {
+    width: 80px; /* Smaller logo size */
+  }
+
+  .footer .social a {
+    font-size: 20px; /* Adjust icon size */
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  .footer ul li a {
+    font-size: 16px; /* Smaller font size */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .about-box {
+    width: 95%; /* Further adjust width for smaller screens */
+    height: auto; /* Auto height to fit content */
+  }
+
+  .footer-logo-pic {
+    transform: translateX(0); /* Center align on smaller screens */
+  }
+
+  .footer .social {
+    flex-direction: column; /* Stack social icons vertically */
+    gap: 15px; /* Add gap between icons */
+  }
+
+  .footer ul {
+    font-size: 16px; /* Smaller font size */
+  }
+
+  .footer ul li {
+    display: block; /* Stack list items vertically */
+    padding: 10px 0; /* Add padding for spacing */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 20px 0; /* Reduce padding for smaller screens */
+  }
+
+  .footer .about-box h3 {
+    font-size: 2.4rem; /* Smaller font size for heading */
+    padding: 3px 15px; /* Adjust padding */
+  }
+
+  .footer .about-box p {
+    font-size: 1.4rem; /* Smaller paragraph font size */
+  }
+
+  .footer .social a {
+    font-size: 18px; /* Adjust icon size */
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .back-to-top-btn {
+    width: 40px; /* Smaller button size */
+    height: 40px;
+    right: 20px; /* Adjust position */
+    bottom: 20px;
+  }
+
+  .back-to-top-btn i {
+    font-size: 2rem; /* Adjust icon size */
+  }
+}
